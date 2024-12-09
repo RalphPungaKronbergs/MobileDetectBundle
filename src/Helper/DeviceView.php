@@ -333,7 +333,8 @@ class DeviceView
      */
     public function modifyResponse(string $view, Response $response): Response
     {
-        $response->headers->setCookie($this->createCookie($view));
+        // Disable Cookies
+        // $response->headers->setCookie($this->createCookie($view));
 
         return $response;
     }
